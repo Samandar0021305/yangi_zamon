@@ -17,11 +17,11 @@ const t = useTranslation()
 
   return (
     <header>
-        <select onChange={handleLocaleChange} value={router.locale}>
+        {/* <select onChange={handleLocaleChange} value={router.locale}>
         <option value="en">Eng</option>
         <option value="uz">UZB</option>
         <option value="ru">RUSS</option>
-      </select>
+      </select> */}
     </header>
   );
 };
