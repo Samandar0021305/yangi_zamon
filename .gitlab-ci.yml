@@ -1,0 +1,53 @@
+stages:          # List of stages for jobs, and their order of execution
+  - build_kaniko
+  - deploy_prod
+
+
+build-job:  
+  stage: build_kaniko
+  variables:
+    IMAGE_DESTINATION: ${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_NAME}
+  image:
+      # We recommend using the CERN version of the Kaniko image: gitlab-registry.cern.ch/ci-tools/docker-image-builder
+      # name: gitlab-registry.cern.ch/ci-tools/docker-image-builder
+      name: gcr.io/kaniko-project/executor:debug
+      
+      entrypoint: [""]
+  script:
+      # Prepare Kaniko configuration file
+      - echo $CI_REGISTRY_IMAGE
+      - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+      # Build and push the image from the Dockerfile at the root of the project.
+      - /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $IMAGE_DESTINATION --cache-dir=/workspace/cache 
+      # Print the full registry path of the pushed image
+      - echo "Image pushed successfully to ${IMAGE_DESTINATION}"
+      - echo "${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_NAME}"  
+  only:
+    - main
+    - dev
+
+
+deploy_prod:
+  stage: deploy_prod
+
+  image: docker
+#  services:
+#    - docker:dind
+#  variables: 
+#    SSH_KEY: $SSH_PRIVATE_KEY
+
+  before_script:
+    - echo "deploying app"
+    - chmod 400 $SSH_PRIVATE_KEY
+    - apk update && apk add openssh-client
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+  only:
+    - dev
+    - main 
+
+  script:
+    - apk add --update --no-cache openssh
+    - chmod 400 $SSH_PRIVATE_KEY
+    - ssh -o StrictHostKeyChecking=no -i $SSH_PRIVATE_KEY $USER@$SERVER_HOST "docker login -u '$CI_REGISTRY_USER' -p '$CI_REGISTRY_PASSWORD' $CI_REGISTRY"
+    - ssh -o StrictHostKeyChecking=no -i $SSH_PRIVATE_KEY $USER@$SERVER_HOST 'docker pull registry.gitlab.com/1itech_company_uz/yangi_zamon/yangi_zamon_front:dev'
+    - ssh -o StrictHostKeyChecking=no -i $SSH_PRIVATE_KEY $USER@$SERVER_HOST "make constop || true && docker run -e 'PORT=6002' --env-file /var/env_zamon_front -p 6002:6002 --name zamon_front -d registry.gitlab.com/1itech_company_uz/yangi_zamon/yangi_zamon_front:dev  && docker ps"
