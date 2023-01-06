@@ -1,8 +1,10 @@
-
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useSelector } from 'react-redux';
+
+
+
 export const  getStaticProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale, ['common'])),
@@ -27,7 +29,7 @@ export const  getStaticProps = async ({ locale }) => ({
       </footer> */}
 
 
-
+    
 
     </div>
   )
