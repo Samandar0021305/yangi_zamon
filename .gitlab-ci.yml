@@ -49,5 +49,5 @@ deploy_prod:
     - apk add --update --no-cache openssh
     - chmod 400 $SSH_PRIVATE_KEY
     - ssh -o StrictHostKeyChecking=no -i $SSH_PRIVATE_KEY $USER@$SERVER_HOST "docker login -u '$CI_REGISTRY_USER' -p '$CI_REGISTRY_PASSWORD' $CI_REGISTRY"
-    - ssh -o StrictHostKeyChecking=no -i $SSH_PRIVATE_KEY $USER@$SERVER_HOST 'docker pull registry.gitlab.com/1itech_company_uz/yangi_zamon/yangi_zamon_front:dev'
-    - ssh -o StrictHostKeyChecking=no -i $SSH_PRIVATE_KEY $USER@$SERVER_HOST "make constop || true && docker run -e 'PORT=6002' --env-file /var/env_zamon_front -p 6002:6002 --name zamon_front -d registry.gitlab.com/1itech_company_uz/yangi_zamon/yangi_zamon_front:dev  && docker ps"
+    - ssh -o StrictHostKeyChecking=no -i $SSH_PRIVATE_KEY $USER@$SERVER_HOST "docker pull registry.gitlab.com/1itech_company_uz/yangi_zamon/yangi_zamon_front:dev"
+    - ssh -o StrictHostKeyChecking=no -i $SSH_PRIVATE_KEY $USER@$SERVER_HOST "docker stop zamon_front || true && docker rm zamon_front || true && docker run -e 'PORT=6002' --env-file /var/env_zamon_front -p 6002:6002 --name zamon_front -d registry.gitlab.com/1itech_company_uz/yangi_zamon/yangi_zamon_front:dev  && docker ps"
