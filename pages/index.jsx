@@ -1,23 +1,20 @@
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useSelector } from 'react-redux';
+import { useSelector } from "react-redux";
 
-
-
-export const  getStaticProps = async ({ locale }) => ({
+export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ['common'])),
+    ...(await serverSideTranslations(locale, ["common"])),
   },
-})
- function Home() {
-  const router= useRouter();
-  const userList = useSelector(state => state.users.userList);
-  const {locale} = router;
-  const {t} = useTranslation("common");
+});
+function Home() {
+  const router = useRouter();
+  const userList = useSelector((state) => state.users.userList);
+  const { locale } = router;
+  const { t } = useTranslation("common");
   return (
-    <div className=''>
-     
+    <div className="">
       {/* <footer>
         <nav>
        {userList.map((el, index) => (
@@ -27,11 +24,7 @@ export const  getStaticProps = async ({ locale }) => ({
        ))}
         </nav>
       </footer> */}
-
-
-    
-
     </div>
-  )
-};
+  );
+}
 export default Home;
