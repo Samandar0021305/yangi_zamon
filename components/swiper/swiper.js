@@ -25,7 +25,7 @@ const Swiper = () => {
 const [render,setRender] = useState(swipper)
 const [count,setCount] = useState(initValue)
 useEffect(()=>{
-    if(count == 3){
+    if(count == render[render.length - 1].id){
         setTimeout(()=>{
             setCount(1)
         },8000)
@@ -38,14 +38,14 @@ useEffect(()=>{
 
 const changeLeft = ()=>{
      if(count == 1){
-        setCount(3)
+        setCount(render[render.length - 1].id)
      }else{
         setCount(count-1)
      }
 }
 
 const changeRight = ()=>{
-    if(count == 3){
+    if(count == render[render.length - 1].id){
         setCount(1)
     }else{
         setCount(count+1)
