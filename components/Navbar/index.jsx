@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import React, {useState} from 'react'
+import {HeaderList, navContact, NavList} from "../../utils/Constants"
 
 const index = React.memo(() => {
   const [searchIcon, setSearchIcon] = useState(false);
@@ -13,17 +15,12 @@ const index = React.memo(() => {
             <div className="row">
               <div className="col-lg-6 col-md-5 col-12">
                 <ul className="top-link">
-                  <li><a href="about.html">Biz haqimizda</a></li>
-                  <li><a href="#">Shifokorlar</a></li>
-                  <li><a href="#">Aloqa</a></li>
-                  <li><a href="#">FAQ</a></li>
+                  {NavList.map(val=>{return (<li key={val.id}><Link href={val.href}>{val.text}</Link></li>) })}
                 </ul>
               </div>
               <div className="col-lg-6 col-md-7 col-12">
                 <ul className="top-contact">
-                  <li><i className="fa fa-phone"></i>+998 99 231 2433</li>
-                  <li><i className="fa fa-envelope"></i><a
-                      href="mailto:support@yangi-zamon.uz">support@yangi-zamon.uz</a></li>
+                 {navContact.map(val=><li key={val.id}><i className={val.img}></i><a href={val.href}>{val.text}</a></li>)}
                 </ul>
               </div>
             </div>
@@ -70,13 +67,7 @@ const index = React.memo(() => {
                   <div className="main-menu">
                     <nav className="navigation">
                       <ul className="nav menu">
-                        <li className="active"><a href="index.html">Bosh sahifa</a></li>
-                        <li><a href="about.html">Biz haqimizda</a></li>
-                        <li><a href="doctors.html">Shifokorlar</a></li>
-                        <li><a href="time-table.html">Ish vaqti</a></li>
-                        <li><a href="pricing.html">Narxlar</a></li>
-                        <li><a href="blog.html">Yangiliklar</a></li>
-                        <li><a href="disease.html">Kassalik</a></li>
+                        {HeaderList.map(val=><li key={val.id}><Link href={val.href}>{val.text}</Link></li>)}
                       </ul>
                     </nav>
                   </div>

@@ -1,8 +1,10 @@
 import React from 'react'
+import { footerList, singleFooter, singleFooter2, social } from '../../utils/Constants'
+
 const Footer = React.memo(() => {
   return (
     <div>
-      <footer id="footer" className="footer ">
+      <footer id="footer" className="footer mt-[80px]">
         <div className="footer-top">
           <div className="container">
             <div className="row">
@@ -10,11 +12,7 @@ const Footer = React.memo(() => {
                 <div className="single-footer">
                   <h2>Biz haqimizda</h2>
                   <ul className="social">
-                    <li><a href="#"><i className="icofont-facebook"></i></a></li>
-                    <li><a href="#"><i className="icofont-google-plus"></i></a></li>
-                    <li><a href="#"><i className="icofont-twitter"></i></a></li>
-                    <li><a href="#"><i className="icofont-vimeo"></i></a></li>
-                    <li><a href="#"><i className="icofont-pinterest"></i></a></li>
+                    {social.map(val => <li key={val.id}><a href=""><i className={val.img}></i></a></li>)}
                   </ul>
                 </div>
               </div>
@@ -23,20 +21,10 @@ const Footer = React.memo(() => {
                   <h2>Tez havolalar</h2>
                   <div className="row">
                     <div className="col-lg-6 col-md-6 col-12">
-                      <ul>
-                        <li><a href="#"><i className="fa fa-caret-right" aria-hidden="true"></i>Bosh sahifa</a></li>
-                        <li><a href="#"><i className="fa fa-caret-right" aria-hidden="true"></i>Biz haqimizda</a></li>
-                        <li><a href="#"><i className="fa fa-caret-right" aria-hidden="true"></i>Xizmatlar</a></li>
-                        <li><a href="#"><i className="fa fa-caret-right" aria-hidden="true"></i>havolalar</a></li>
-                      </ul>
+                      <ul>{singleFooter.map(val => <li key={val.id}><a href="#"><i className={val.img} aria-hidden="true"></i>{val.text}</a></li>)}</ul>
                     </div>
                     <div className="col-lg-6 col-md-6 col-12">
-                      <ul>
-                        <li><a href="#"><i className="fa fa-caret-right" aria-hidden="true"></i>Maslahat</a></li>
-                        <li><a href="#"><i className="fa fa-caret-right" aria-hidden="true"></i>Moliya</a></li>
-                        <li><a href="#"><i className="fa fa-caret-right" aria-hidden="true"></i>Guvohlar</a></li>
-                        <li><a href="#"><i className="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
-                      </ul>
+                      <ul>{singleFooter2.map(val => <li><a href="#"><i className={val.img} aria-hidden="true"></i>{val.text}</a></li>)}</ul>
                     </div>
                   </div>
                 </div>
@@ -44,11 +32,7 @@ const Footer = React.memo(() => {
               <div className="col-lg-3 col-md-6 col-12">
                 <div className="single-footer">
                   <h2>Ochiq vaqtlar</h2>
-                  <ul className="time-sidual">
-                    <li className="day">Dushanba - Juma <span>8.00-20.00</span></li>
-                    <li className="day">Shanba <span>9.00-18.30</span></li>
-                    <li className="day">Dushanba - Shu kun <span>9.00-15.00</span></li>
-                  </ul>
+                  <ul className="time-sidual">{footerList.map(val=><li key={val.id} className="day">{val.day}<span>{val.time}</span></li>)}</ul>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6 col-12">
@@ -58,9 +42,9 @@ const Footer = React.memo(() => {
                     bo'ling.</p>
                   <form action="" method="get" className="newsletter-inner">
                     <input name="email" placeholder="E-pochta manzili" className="common-input"
-                           onFocus="this.placeholder = ''"
-                           onBlur="this.placeholder = 'Your email address'" required="" type="email"/>
-                      <button className="button"><i className="icofont icofont-paper-plane"></i></button>
+                      onFocus="this.placeholder = ''"
+                      onBlur="this.placeholder = 'Your email address'" required="" type="email" />
+                    <button className="button"><i className="icofont icofont-paper-plane"></i></button>
                   </form>
                 </div>
               </div>

@@ -4,6 +4,12 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import { useSelector } from 'react-redux';
 import Swiper from '../components/swiper/swiper.js'
+import IndexHeader from "../components/indexHeader/index.jsx";
+import HomeAction from "../components/HomeAction"
+import Departament from "../components/Departament"
+import Pricing from "../components/Pricing"
+import Blog from "../components/Blog"
+
 export const  getStaticProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale, ["common"])),
@@ -17,12 +23,18 @@ function Home() {
   return (
 
     <div className=''>
+      
       <Swiper />
+      <IndexHeader />
+      <HomeAction />
+      <Departament />
+     <Pricing /> 
+     <Blog />
       {/* <footer>
         <nav>
        {userList.map((el, index) => (
         <div key={index}>
-           <span>name: {el.name}</span>
+           <span>name: {el.name}</span>FunFacts
         </div>
        ))}
         </nav>
