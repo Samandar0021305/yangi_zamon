@@ -8,7 +8,7 @@ import FunFacts from "../components/FunFacts";
 import WhyChoose from "../components/WhyChoose"
 import CallAction from "../components/CallAction"
 import Service from "../components/Service"
- 
+import Testimonials from "../components/Testimonials"
 
 export const  getStaticProps = async ({ locale }) => ({
   props: {
@@ -29,7 +29,7 @@ export const  getStaticProps = async ({ locale }) => ({
       <WhyChoose />
       <CallAction />
       <Service />
-
+      {/* <Testimonials /> */}
 
       {/* <footer>
         <nav>

@@ -4,22 +4,24 @@ import { createWrapper } from "next-redux-wrapper";
 import store from "../redux/store";
 import Layout from '../components/Layout/Layout';
 import Head from 'next/head'
+
 import '../styles/css/bootstrap.min.css'
-import '../styles/globals.css'
-import '../styles/css/magnific-popup.css'
-import '../styles/css/animate.min.css'
-import '../styles/css/owl-carousel.css'
-import '../styles/css/slicknav.min.css'
-import '../styles/css/icofont.css'
-// import '../styles/css/font-awesome.min.css'
-import '../styles/css/font-awesome.min.css'
 import '../styles/css/nice-select.css'
+import '../styles/css/font-awesome.min.css'
+import '../styles/css/icofont.css'
+import '../styles/css/slicknav.min.css'
+import '../styles/css/owl-carousel.css'
+import "../styles/css/datepicker.css"
+// import '../styles/css/font-awesome.min.css'
+import '../styles/css/animate.min.css'
+import '../styles/css/magnific-popup.css'
 // import '../styles/css/bootstrap.min.css'
 import "../styles/css/normalize.css"
 import '../styles/css/style.css'
 import '../styles/css/responsive.css'
 import '../styles/css/color/color1.css'
 
+import '../styles/globals.css'
 function MyApp({ Component, pageProps }) {
   return <>
     <Head>

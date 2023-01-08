@@ -234,3 +234,5 @@ export const service =[
         text:"Qon quyish"
     },
 ]
+
+
