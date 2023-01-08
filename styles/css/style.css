@@ -1305,13 +1305,14 @@ font-size: 25px;
 .testimonials .section-title h2{
 	color:#fff;
 }
-/* .Feautes .section-title{
+.section-title{
+   width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	padding-bottom: 16px;
-} */
+}
 .testimonials .single-testimonial {
 	text-align: left;
 	position: relative;
