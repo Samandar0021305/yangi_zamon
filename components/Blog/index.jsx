@@ -17,7 +17,7 @@ const index = React.memo(() => {
                             </div>
                         </div>
                     </div>
-                    <div classNameName="row">
+                    <div className="row">
                         {
                             BlogList.map((val, id) => {
                                 return (
@@ -95,7 +95,7 @@ const index = React.memo(() => {
                                     </div>
                                     <div className="col-lg-6 col-md-6 col-12">
                                         <div className="form-group">
-                                            <div className="nice-select form-control wide" tabindex="0"><span className="current">Bo'lim</span>
+                                            <div className="nice-select form-control wide" ><span className="current">Bo'lim</span>
                                                 <ul className="list">
                                                     <li data-value="1" className="option selected ">Bo'lim</li>
                                                     <li data-value="2" className="option">Kardiologiya klinikasi</li>
@@ -108,7 +108,7 @@ const index = React.memo(() => {
                                     </div>
                                     <div className="col-lg-6 col-md-6 col-12">
                                         <div className="form-group">
-                                            <div className="nice-select form-control wide" tabindex="0"><span className="current">Doktor</span>
+                                            <div className="nice-select form-control wide"><span className="current">Doktor</span>
                                                 <ul className="list">
                                                     <li data-value="1" className="option selected ">Doktor</li>
                                                     <li data-value="2" className="option">Dr. Akther Hossain</li>
@@ -166,8 +166,8 @@ const index = React.memo(() => {
                         <div className="col-lg-6  col-12">
                             <div className="subscribe-form ">
                                 <form action="" method="get" className="newsletter-inner">
-                                    <input name="EMAIL" placeholder="Telefon raqamingiz" className="common-input" onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Telefon raqamingiz'" required="" type="email" />
+                                    <input name="EMAIL" placeholder="Telefon raqamingiz" className="common-input" 
+                                        required="" type="email" />
                                     <button className="btn">Azo bolish</button>
                                 </form>
                             </div>

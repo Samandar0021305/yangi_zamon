@@ -107,9 +107,9 @@ const index = React.memo(() => {
                     </div>
                     <div className="row">
                         {
-                            PricingList.map((val, i) => {
+                            PricingList.map((val, item) => {
                                 return (
-                                    <div key={i} className="col-lg-3 col-md-6 col-12" data-tilt>
+                                    <div key={item} className="col-lg-3 col-md-6 col-12" data-tilt>
                                         <div className="single-team wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s">
                                             <div className="t-head">
                                                 <Image src={val.img} alt="#" />

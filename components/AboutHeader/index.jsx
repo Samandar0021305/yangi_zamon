@@ -39,7 +39,7 @@ const index = React.memo(() => {
                                 {
                                     AboutHeaderList.map((val,item)=>{
                                         return (
-                                            <li key={item}><i classNameName={val.img}></i>{val.text}</li>
+                                            <li key={item}><i className={val.img}></i>{val.text}</li>
                                         )
                                     })
                                 }
@@ -151,7 +151,7 @@ const index = React.memo(() => {
 					<div className="col-lg-6  col-12">
 						<div className="subscribe-form ">
 							<form action="" method="get" className="newsletter-inner">
-								<input name="EMAIL" placeholder="Telefon raqamingiz" className="common-input" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telefon raqamingiz'" required="" type="email" />
+								<input name="EMAIL" placeholder="Telefon raqamingiz" className="common-input"  required="" type="email" />
 								<button className="btn">Azo bolish</button>
 							</form>
 						</div>

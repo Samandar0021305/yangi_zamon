@@ -9,7 +9,7 @@ const index = React.memo(() => {
 			<section className="departments section">
 				<div className="container">
 					<div className="row">
-						<div classNameName="col-lg-12">
+						<div className="col-lg-12">
 							<div className="section-title">
 								<h2>Biz sizning kasalliklaringizga tashxis qo'yish uchun turli bo'limlarni taklif qilamiz</h2>
 								<Image src={logo} alt="#" />

@@ -112,12 +112,21 @@ const index = React.memo(() => {
                                 <div className="row">
                                     <div className="col-lg-6">
                                         <ul className="list">
-                                            {WhyChooseList.map(val => <li key={val.id}><i className={val.img}></i>{val.text}</li>)}
+                                            {WhyChooseList.map(val =>{
+                                                return(
+                                                    <li key={val.id}><i className={val.img}></i>{val.text}</li>
+                                                )
+                                            })}
                                         </ul>
                                     </div>
                                     <div className="col-lg-6">
                                         <ul className="list">
-                                            {WhyChooseList.map(val => <li key={val.id}><i className={val.img}></i>{val.text}</li>)}
+                                        {WhyChooseList.map(val =>{
+                                                return(
+                                                    <li key={val.id}><i className={val.img}></i>{val.text}</li>
+                                                )
+                                            })}
+
                                         </ul>
                                     </div>
                                 </div>

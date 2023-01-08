@@ -12,7 +12,11 @@ const Footer = React.memo(() => {
                 <div className="single-footer">
                   <h2>Biz haqimizda</h2>
                   <ul className="social">
-                    {social.map(val => <li key={val.id}><a href=""><i className={val.img}></i></a></li>)}
+                    {social.map(val => {
+                      return(
+                        <li key={val.id}><a href=""><i className={val.img}></i></a></li>
+                      )
+                    })}
                   </ul>
                 </div>
               </div>
@@ -24,7 +28,7 @@ const Footer = React.memo(() => {
                       <ul>{singleFooter.map(val => <li key={val.id}><a href="#"><i className={val.img} aria-hidden="true"></i>{val.text}</a></li>)}</ul>
                     </div>
                     <div className="col-lg-6 col-md-6 col-12">
-                      <ul>{singleFooter2.map(val => <li><a href="#"><i className={val.img} aria-hidden="true"></i>{val.text}</a></li>)}</ul>
+                      <ul>{singleFooter2.map(val => <li key={val.id}><a href="#"><i className={val.img} aria-hidden="true"></i>{val.text}</a></li>)}</ul>
                     </div>
                   </div>
                 </div>
@@ -42,8 +46,7 @@ const Footer = React.memo(() => {
                     bo'ling.</p>
                   <form action="" method="get" className="newsletter-inner">
                     <input name="email" placeholder="E-pochta manzili" className="common-input"
-                      onFocus="this.placeholder = ''"
-                      onBlur="this.placeholder = 'Your email address'" required="" type="email" />
+                       required="" type="email" />
                     <button className="button"><i className="icofont icofont-paper-plane"></i></button>
                   </form>
                 </div>
