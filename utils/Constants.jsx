@@ -236,3 +236,31 @@ export const service =[
 ]
 
 
+
+
+export const AboutHeaderList = [
+    {
+        img:"icofont-tick-mark",
+        text:"Yaxshiroq natijaga erishish uchun ilmiy ko'nikmalar"
+    },
+    {
+        img:"icofont-tick-mark",
+        text:"Aloqa olish uchun muloqot qobiliyatlari"
+    },
+    {
+        img:"icofont-tick-mark",
+        text:"Karyera haqida umumiy ma'lumot olish imkoniyati mavjud"
+    },
+    {
+        img:"icofont-tick-mark",
+        text:"Ish uchun yaxshi ish muhiti"
+    },
+    {
+        img:"icofont-tick-mark",
+        text:"Yaxshiroq natijaga erishish uchun ilmiy ko'nikmalar"
+    },
+    {
+        img:"icofont-tick-mark",
+        text:"Aloqa olish uchun muloqot qobiliyatlari"
+    },
+]
