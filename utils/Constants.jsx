@@ -1,5 +1,3 @@
-// import PhoneIcon from '@mui/icons-material/Phone';
-// import QueryBuilderIcon from '@mui/icons-material/QueryBuilder';
 
 export const NavList = [
     {
@@ -167,4 +165,72 @@ export const footerList = [
         day:"Dushanba - Shu kun ",
         time:"9.00-15.00"
      },
+]
+
+
+export const WhyChooseList = [
+    {
+        id:1,
+        img:"fa fa-caret-right",
+        text:"Maecenas vitae luctus nibh.",
+    },
+    {
+        id:2,
+        img:"fa fa-caret-right",
+        text:"Duis massa massa.",
+    },
+    {
+        id:3,
+        img:"fa fa-caret-right",
+        text:"Aliquam feugiat interdum.",
+    },
+]
+
+
+export const portfolioList = [
+    {
+        classList:"single-pf wow fadeIn",
+        text:"Tafsilotlarni ko'rish",
+        
+    }
+]
+
+
+export const service =[
+    {
+        classList:"col-lg-4 col-md-6 col-12",
+        classList2:"single-service wow fadeInUp",
+        img:"icofont icofont-prescription",
+        text:"Umumiy davolash"
+    },
+    {
+        classList:"col-lg-4 col-md-6 col-12",
+        classList2:"single-service wow fadeInUp",
+        img:"icofont icofont-tooth",
+        text:"Tishlarni oqartirish"
+    },
+    {
+        classList:"col-lg-4 col-md-6 col-12",
+        classList2:"single-service wow fadeInUp",
+        img:"icofont icofont-heart-alt",
+        text:"Yurak jarrohligi"
+    },
+    {
+        classList:"col-lg-4 col-md-6 col-12",
+        classList2:"single-service wow fadeInUp",
+        img:"icofont icofont-listening",
+        text:"Quloqni davolash"
+    },
+    {
+        classList:"col-lg-4 col-md-6 col-12",
+        classList2:"single-service wow fadeInUp",
+        img:"icofont icofont-eye-alt",
+        text:"Ko'rish muammolari"
+    },
+    {
+        classList:"col-lg-4 col-md-6 col-12",
+        classList2:"single-service wow fadeInUp",
+        img:"icofont icofont-blood",
+        text:"Qon quyish"
+    },
 ]

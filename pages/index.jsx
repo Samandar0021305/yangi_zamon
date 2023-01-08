@@ -3,6 +3,13 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useSelector } from 'react-redux';
 import Swiper from '../components/swiper/swiper.js'
+import Futures from "../components/Feautes"
+import FunFacts from "../components/FunFacts";
+import WhyChoose from "../components/WhyChoose"
+import CallAction from "../components/CallAction"
+import Service from "../components/Service"
+ 
+
 export const  getStaticProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale, ['common'])),
@@ -15,12 +22,20 @@ export const  getStaticProps = async ({ locale }) => ({
   const {t} = useTranslation("common");
   return (
     <div className=''>
+      
       <Swiper />
+      {/* <Futures /> */}
+      <FunFacts />
+      <WhyChoose />
+      <CallAction />
+      <Service />
+
+
       {/* <footer>
         <nav>
        {userList.map((el, index) => (
         <div key={index}>
-           <span>name: {el.name}</span>
+           <span>name: {el.name}</span>FunFacts
         </div>
        ))}
         </nav>

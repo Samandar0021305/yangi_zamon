@@ -22,7 +22,7 @@ const Swiper = () => {
                           </div>
                       </div>
                   </div>
-                  <div className="single-slider" style={{backgroundImage:"url('img/slider.jpg')"}}>
+                  {/* <div className="single-slider" style={{backgroundImage:"url('img/slider.jpg')"}}>
                       <div className="container">
                           <div className="row">
                               <div className="col-lg-7">
@@ -37,8 +37,8 @@ const Swiper = () => {
                               </div>
                           </div>
                       </div>
-                  </div>
-                  <div className="single-slider" style={{backgroundImage:"url('img/slider3.jpg')"}}>
+                  </div> */}
+                  {/* <div className="single-slider" style={{backgroundImage:"url('img/slider3.jpg')"}}>
                       <div className="container">
                           <div className="row">
                               <div className="col-lg-7">
@@ -53,7 +53,7 @@ const Swiper = () => {
                               </div>
                           </div>
                       </div>
-                  </div>
+                  </div> */}
               </div>
           </section>
           <Script src="../../styles/js/owl-carousel.js" defer={true}/>
