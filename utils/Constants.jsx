@@ -79,3 +79,92 @@ export const HeaderList = [
     },
 ]
 
+export const social = [
+    {
+        id:1,
+        img:"icofont-facebook"
+    },
+    {
+        id:2,
+        img:"icofont-google-plus"
+    },
+    {
+        id:3,
+        img:"icofont-twitter"
+    },
+    {
+        id:4,
+        img:"icofont-vimeo"
+    },
+    {
+        id:5,
+        img:"icofont-pinterest"
+    },
+]
+
+export const singleFooter = [
+    {
+        id:1,
+        img:"fa fa-caret-right",
+        text:"Bosh sahifa",
+    },
+    {
+        id:2,
+        img:"fa fa-caret-right",
+        text:"Biz haqimizda",
+    },
+    {
+        id:3,
+        img:"fa fa-caret-right",
+        text:"Xizmatlar",
+    },
+    {
+        id:4,
+        img:"fa fa-caret-right",
+        text:"havolalar",
+    },
+]
+
+
+
+export const singleFooter2 = [
+    {
+        id:1,
+        img:"fa fa-caret-right",
+        text:"Maslahat",
+    },
+    {
+        id:2,
+        img:"fa fa-caret-right",
+        text:"Moliya",
+    },
+    {
+        id:3,
+        img:"fa fa-caret-right",
+        text:"Guvohlar",
+    },
+    {
+        id:4,
+        img:"fa fa-caret-right",
+        text:"FAQ",
+    },
+]
+
+
+export const footerList = [
+    {
+       id:1,
+       day:"Dushanba - Juma ",
+       time:"8.00-20.00"
+    },
+    {
+        id:2,
+        day:"Shanba",
+        time:"9.00-18.30"
+     },
+     {
+        id:3,
+        day:"Dushanba - Shu kun ",
+        time:"9.00-15.00"
+     },
+]
