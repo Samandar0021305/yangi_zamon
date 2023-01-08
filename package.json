@@ -9,6 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.3",
+    "aos": "^2.3.4",
     "axios": "^1.2.1",
     "bootstrap": "^5.2.3",
     "eslint": "8.28.0",

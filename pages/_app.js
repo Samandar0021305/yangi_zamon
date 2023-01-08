@@ -4,7 +4,7 @@ import { createWrapper } from "next-redux-wrapper";
 import store from "../redux/store";
 import Layout from '../components/Layout/Layout';
 import Head from 'next/head'
-
+import React,{useEffect} from 'react';
 import '../styles/css/bootstrap.min.css'
 import '../styles/css/nice-select.css'
 import '../styles/css/font-awesome.min.css'
@@ -22,7 +22,14 @@ import '../styles/css/responsive.css'
 import '../styles/css/color/color1.css'
 
 import '../styles/globals.css'
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return <>
     <Head>
       <title>yangi zamon</title>
