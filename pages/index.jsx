@@ -9,25 +9,25 @@ import Departament from "../components/Departament"
 import Pricing from "../components/Pricing"
 import Blog from "../components/Blog"
 
-export const  getStaticProps = async ({ locale }) => ({
+export const getStaticProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale, ['common'])),
   },
 })
- function Home() {
-  const router= useRouter();
+function Home() {
+  const router = useRouter();
   const userList = useSelector(state => state.users.userList);
-  const {locale} = router;
-  const {t} = useTranslation("common");
+  const { locale } = router;
+  const { t } = useTranslation("common");
   return (
     <div className=''>
-      
+
       <Swiper />
       <IndexHeader />
       <HomeAction />
       <Departament />
-     <Pricing /> 
-     <Blog />
+      <Pricing />
+      <Blog />
       {/* <footer>
         <nav>
        {userList.map((el, index) => (
@@ -39,7 +39,7 @@ export const  getStaticProps = async ({ locale }) => ({
       </footer> */}
 
 
-    
+
 
     </div>
   )

@@ -194,29 +194,29 @@ import pf4 from "../styles/img/pf4.jpg"
 
 export const portfolioList = [
     {
-      img:pf1
+        img: pf1
     },
     {
-        img:pf2
+        img: pf2
     },
     {
-        img:pf3
+        img: pf3
     },
     {
-        img:pf4
+        img: pf4
     },
     {
-        img:pf1
-      },
-      {
-          img:pf2
-      },
-      {
-          img:pf3
-      },
-      {
-          img:pf4
-      },
+        img: pf1
+    },
+    {
+        img: pf2
+    },
+    {
+        img: pf3
+    },
+    {
+        img: pf4
+    },
 ]
 
 
@@ -343,24 +343,24 @@ import team4 from "../styles/img/team4.jpg"
 
 export const PricingList = [
     {
-        name:"Collis Molate",
-        job:"Neyroxirurg",
-        img:team1
+        name: "Collis Molate",
+        job: "Neyroxirurg",
+        img: team1
     },
     {
-        name:"Domani Plavon",
-        job:"Neyroxirurg",
-        img:team2
+        name: "Domani Plavon",
+        job: "Neyroxirurg",
+        img: team2
     },
     {
-        name:"John Mard",
-        job:"Tish jarrohi",
-        img:team3
+        name: "John Mard",
+        job: "Tish jarrohi",
+        img: team3
     },
     {
-        name:"Amanal Frond",
-        job:"Neyroxirurg",
-        img:team4
+        name: "Amanal Frond",
+        job: "Neyroxirurg",
+        img: team4
     },
 ]
 
@@ -371,15 +371,52 @@ import blogImg3 from "../styles/img/blog3.jpg"
 
 export const BlogList = [
     {
-      img:blogImg1,
-      text:"Biz yangi mahsulotimizni e'lon qildik."
+        img: blogImg1,
+        text: "Biz yangi mahsulotimizni e'lon qildik."
     },
     {
-        img:blogImg2,
-        text:"Tish muammolarini hal qilishning eng yaxshi besh usuli."
-      },
-      {
-        img:blogImg3,
-        text:"Biz yuqori darajadagi biznes yechimlarini taqdim etamiz."
-      },
+        img: blogImg2,
+        text: "Tish muammolarini hal qilishning eng yaxshi besh usuli."
+    },
+    {
+        img: blogImg3,
+        text: "Biz yuqori darajadagi biznes yechimlarini taqdim etamiz."
+    },
+]
+
+import clientsImg1 from "../styles/img/client1.png"
+import clientsImg2 from "../styles/img/client2.png"
+import clientsImg3 from "../styles/img/client3.png"
+import clientsImg4 from "../styles/img/client4.png"
+import clientsImg5 from "../styles/img/client5.png"
+
+
+export const clientsList = [
+    {
+        img: clientsImg1
+    },
+    {
+        img: clientsImg2
+    },
+    {
+        img: clientsImg3
+    },
+    {
+        img: clientsImg4
+    },
+    {
+        img: clientsImg5
+    },
+    {
+        img: clientsImg1
+    },
+    {
+        img: clientsImg2
+    },
+    {
+        img: clientsImg3
+    },
+    {
+        img: clientsImg4
+    },
 ]
