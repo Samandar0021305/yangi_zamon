@@ -5,16 +5,16 @@ const index = React.memo(() => {
   return (
     <>
 
-<div class="breadcrumbs overlay">
-			<div class="container">
-				<div class="bread-inner">
-					<div class="row">
-						<div class="col-12">
+<div className="breadcrumbs overlay">
+			<div className="container">
+				<div className="bread-inner">
+					<div className="row">
+						<div className="col-12">
 							<h2>Biz haqimizda</h2>
-							<ul class="bread-list">
+							<ul className="bread-list">
 								<li><a href="index-2.html">Bosh sahifa</a></li>
-								<li><i class="icofont-simple-right"></i></li>
-								<li class="active">BIz haqimizda</li>
+								<li><i className="icofont-simple-right"></i></li>
+								<li className="active">BIz haqimizda</li>
 							</ul>
 						</div>
 					</div>

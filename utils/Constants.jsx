@@ -334,3 +334,32 @@ export const DoctorsList = [
         img: doc2
     },
 ]
+
+import team1 from "../styles/img/team1.jpg"
+import team2 from "../styles/img/team2.jpg"
+import team3 from "../styles/img/team3.jpg"
+import team4 from "../styles/img/team4.jpg"
+
+
+export const PricingList = [
+    {
+        name:"Collis Molate",
+        job:"Neyroxirurg",
+        img:team1
+    },
+    {
+        name:"Domani Plavon",
+        job:"Neyroxirurg",
+        img:team2
+    },
+    {
+        name:"John Mard",
+        job:"Tish jarrohi",
+        img:team3
+    },
+    {
+        name:"Amanal Frond",
+        job:"Neyroxirurg",
+        img:team4
+    },
+]

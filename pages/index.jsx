@@ -5,6 +5,9 @@ import { useSelector } from 'react-redux';
 import Swiper from '../components/swiper/swiper.js'
 import IndexHeader from "../components/indexHeader/index.jsx";
 import HomeAction from "../components/HomeAction"
+import Departament from "../components/Departament"
+import Pricing from "../components/Pricing"
+
 export const  getStaticProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale, ['common'])),
@@ -21,8 +24,8 @@ export const  getStaticProps = async ({ locale }) => ({
       <Swiper />
       <IndexHeader />
       <HomeAction />
-
-
+      <Departament />
+     <Pricing /> 
       {/* <footer>
         <nav>
        {userList.map((el, index) => (
