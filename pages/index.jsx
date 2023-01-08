@@ -7,6 +7,7 @@ import IndexHeader from "../components/indexHeader/index.jsx";
 import HomeAction from "../components/HomeAction"
 import Departament from "../components/Departament"
 import Pricing from "../components/Pricing"
+import Blog from "../components/Blog"
 
 export const  getStaticProps = async ({ locale }) => ({
   props: {
@@ -26,6 +27,7 @@ export const  getStaticProps = async ({ locale }) => ({
       <HomeAction />
       <Departament />
      <Pricing /> 
+     <Blog />
       {/* <footer>
         <nav>
        {userList.map((el, index) => (

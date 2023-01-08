@@ -363,3 +363,23 @@ export const PricingList = [
         img:team4
     },
 ]
+
+import blogImg1 from "../styles/img/blog1.jpg"
+import blogImg2 from "../styles/img/blog2.jpg"
+import blogImg3 from "../styles/img/blog3.jpg"
+
+
+export const BlogList = [
+    {
+      img:blogImg1,
+      text:"Biz yangi mahsulotimizni e'lon qildik."
+    },
+    {
+        img:blogImg2,
+        text:"Tish muammolarini hal qilishning eng yaxshi besh usuli."
+      },
+      {
+        img:blogImg3,
+        text:"Biz yuqori darajadagi biznes yechimlarini taqdim etamiz."
+      },
+]
