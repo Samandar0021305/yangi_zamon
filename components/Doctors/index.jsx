@@ -63,7 +63,7 @@ const index = React.memo(() => {
 						<div className="subscribe-form ">
 							<form action="" method="get" className="newsletter-inner">
 								<input name="EMAIL" placeholder="Telefon raqamingiz" className="common-input" onfocus="this.placeholder = ''"
-									onblur="this.placeholder = 'Telefon raqamingiz'" required="" type="email" />
+									onBlur="this.placeholder = 'Telefon raqamingiz'" required="" type="email" />
 								<button className="btn">Azo bolish</button>
 							</form>
 						</div>

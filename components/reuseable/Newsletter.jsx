@@ -22,7 +22,7 @@ const Newsletter = () => {
                   placeholder="Telefon raqamingiz"
                   className="common-input"
                   onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Telefon raqamingiz'"
+                  onBlur="this.placeholder = 'Telefon raqamingiz'"
                   required=""
                   type="email"
                 />

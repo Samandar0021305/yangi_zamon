@@ -5,7 +5,6 @@ import { useRouter } from "next/router";
 
 const index = React.memo(() => {
   const router = useRouter();
-  console.log(router.route);
   const [searchIcon, setSearchIcon] = useState(false);
   const openInClose = () => {
     setSearchIcon((old) => !old);

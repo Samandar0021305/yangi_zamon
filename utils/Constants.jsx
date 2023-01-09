@@ -63,7 +63,7 @@ export const HeaderList = [
     text: "Narxlar",
   },
   {
-    id: 5,
+    id: 7,
     href: "/yangilik",
     text: "Yangiliklar",
   },
