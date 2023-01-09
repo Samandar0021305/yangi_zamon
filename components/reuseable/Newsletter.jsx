@@ -21,7 +21,7 @@ const Newsletter = () => {
                   name="EMAIL"
                   placeholder="Telefon raqamingiz"
                   className="common-input"
-                  onfocus="this.placeholder = ''"
+                  onFocus="this.placeholder = ''"
                   onBlur="this.placeholder = 'Telefon raqamingiz'"
                   required=""
                   type="email"

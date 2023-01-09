@@ -20,8 +20,8 @@ const NewsPage = () => {
           <div className="row">
             <div className="col-lg-8 col-12">
               <div className="row">
-                {newsData.map((item) => (
-                  <div className="col-lg-6 col-md-6 col-12">
+                {newsData.map((item, index) => (
+                  <div key={index} className="col-lg-6 col-md-6 col-12">
                     <div className="single-news">
                       <div className="news-head">
                         <Image src={item.img} alt="cart image" />
@@ -54,7 +54,7 @@ const NewsPage = () => {
                 <div className="single-widget recent-post">
                   <h3 className="title">Oxirgi post</h3>
                   {postsData.map((post) => (
-                    <Post post={post} />
+                    <Post key={post.id} post={post} />
                   ))}
                 </div>
                 <Tags />

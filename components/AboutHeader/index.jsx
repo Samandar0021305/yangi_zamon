@@ -171,8 +171,8 @@ const index = React.memo(() => {
                     name="EMAIL"
                     placeholder="Telefon raqamingiz"
                     className="common-input"
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Telefon raqamingiz'"
+                    onFocus="this.placeholder = ''"
+                    onBlur="this.placeholder = 'Telefon raqamingiz'"
                     required=""
                     type="email"
                   />
