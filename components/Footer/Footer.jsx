@@ -4,7 +4,7 @@ import { footerList, singleFooter, singleFooter2, social } from '../../utils/Con
 const Footer = React.memo(() => {
   return (
     <div>
-      <footer id="footer" className="footer mt-[80px]">
+      <footer id="footer" className="footer">
         <div className="footer-top">
           <div className="container">
             <div className="row">
