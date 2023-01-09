@@ -2,10 +2,12 @@ import React from 'react'
 import Image from 'next/image'
 import logo from "../../styles/img/section-img.png"
 import department from "../../styles/img/department.jpg"
+import CaruselCustom from "../CaruselCustom"
 
 const index = React.memo(() => {
 	return (
 		<>
+		<CaruselCustom/>
 			<section className="departments section">
 				<div className="container">
 					<div className="row">
