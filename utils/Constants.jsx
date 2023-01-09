@@ -186,39 +186,6 @@ export const WhyChooseList = [
     },
 ]
 
-import pf1 from "../styles/img/pf1.jpg"
-import pf2 from "../styles/img/pf2.jpg"
-import pf3 from "../styles/img/pf3.jpg"
-import pf4 from "../styles/img/pf4.jpg"
-
-
-export const portfolioList = [
-    {
-        img: pf1
-    },
-    {
-        img: pf2
-    },
-    {
-        img: pf3
-    },
-    {
-        img: pf4
-    },
-    {
-        img: pf1
-    },
-    {
-        img: pf2
-    },
-    {
-        img: pf3
-    },
-    {
-        img: pf4
-    },
-]
-
 
 export const service = [
     {
