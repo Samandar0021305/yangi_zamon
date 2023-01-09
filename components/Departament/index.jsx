@@ -3,11 +3,12 @@ import Image from 'next/image'
 import logo from "../../styles/img/section-img.png"
 import department from "../../styles/img/department.jpg"
 import CaruselCustom from "../CaruselCustom"
+import { departmentList } from '../../utils/Constants'
 
 const index = React.memo(() => {
 	return (
 		<>
-		<CaruselCustom/>
+			<CaruselCustom />
 			<section className="departments section">
 				<div className="container">
 					<div className="row">
@@ -36,11 +37,7 @@ const index = React.memo(() => {
 													<h3>Kardiologiya klinikasi</h3>
 													<p className="p1">“Vivamus ut tellus sed tellus finibus egestas. Mauris adipiscing aliquet et nisl nec eleifend adipiscing elit.”</p>
 													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra ante vel est lobortis, a commodo magna rhoncus. In quis nisi non quam pharetra commodo. </p>
-													<ul className="list">
-														<li><i className="fa fa-check"></i>Maecenas vitae luctus nibh. Curabitur pharetra luctus est, sit amet aliquam ex posuere id. </li>
-														<li><i className="fa fa-check"></i> Maecenas pharetra ante vel est lobortis</li>
-														<li><i className="fa fa-check"></i>Lorem ipsum dolor sit amet, consectetur.</li>
-													</ul>
+													<ul className="list">{departmentList.map((val, id) => <li key={id}><i className="fa fa-check"></i>{val.text} </li>)}</ul>
 												</div>
 											</div>
 											<div className="col-lg-6">
@@ -57,11 +54,7 @@ const index = React.memo(() => {
 													<h3>Nevrologiya</h3>
 													<p className="p1">“Vivamus ut tellus sed tellus finibus egestas. Mauris adipiscing aliquet et nisl nec eleifend adipiscing elit.”</p>
 													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra ante vel est lobortis, a commodo magna rhoncus. In quis nisi non quam pharetra commodo. </p>
-													<ul className="list">
-														<li><i className="fa fa-check"></i>Maecenas vitae luctus nibh. Curabitur pharetra luctus est, sit amet aliquam ex posuere id. </li>
-														<li><i className="fa fa-check"></i> Maecenas pharetra ante vel est lobortis</li>
-														<li><i className="fa fa-check"></i>Lorem ipsum dolor sit amet, consectetur.</li>
-													</ul>
+													<ul className="list">{departmentList.map((val, id) => <li key={id}><i className="fa fa-check"></i>{val.text} </li>)}</ul>
 												</div>
 											</div>
 											<div className="col-lg-6">
@@ -78,11 +71,7 @@ const index = React.memo(() => {
 													<h3>Stomatologiya</h3>
 													<p className="p1">“Vivamus ut tellus sed tellus finibus egestas. Mauris adipiscing aliquet et nisl nec eleifend adipiscing elit.”</p>
 													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra ante vel est lobortis, a commodo magna rhoncus. In quis nisi non quam pharetra commodo. </p>
-													<ul className="list">
-														<li><i className="fa fa-check"></i>Maecenas vitae luctus nibh. Curabitur pharetra luctus est, sit amet aliquam ex posuere id. </li>
-														<li><i className="fa fa-check"></i> Maecenas pharetra ante vel est lobortis</li>
-														<li><i className="fa fa-check"></i>Lorem ipsum dolor sit amet, consectetur.</li>
-													</ul>
+													<ul className="list">{departmentList.map((val, id) => <li key={id}><i className="fa fa-check"></i>{val.text} </li>)}</ul>
 												</div>
 											</div>
 											<div className="col-lg-6">
@@ -100,11 +89,7 @@ const index = React.memo(() => {
 													<h3>Gastroenterologiya</h3>
 													<p className="p1">“Vivamus ut tellus sed tellus finibus egestas. Mauris adipiscing aliquet et nisl nec eleifend adipiscing elit.”</p>
 													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra ante vel est lobortis, a commodo magna rhoncus. In quis nisi non quam pharetra commodo. </p>
-													<ul className="list">
-														<li><i className="fa fa-check"></i>Maecenas vitae luctus nibh. Curabitur pharetra luctus est, sit amet aliquam ex posuere id. </li>
-														<li><i className="fa fa-check"></i> Maecenas pharetra ante vel est lobortis</li>
-														<li><i className="fa fa-check"></i>Lorem ipsum dolor sit amet, consectetur.</li>
-													</ul>
+													<ul className="list">{departmentList.map((val, id) => <li key={id}><i className="fa fa-check"></i>{val.text} </li>)}</ul>
 												</div>
 											</div>
 											<div className="col-lg-6">
@@ -122,11 +107,7 @@ const index = React.memo(() => {
 													<h3>Ortopediya</h3>
 													<p className="p1">“Vivamus ut tellus sed tellus finibus egestas. Mauris adipiscing aliquet et nisl nec eleifend adipiscing elit.”</p>
 													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra ante vel est lobortis, a commodo magna rhoncus. In quis nisi non quam pharetra commodo. </p>
-													<ul className="list">
-														<li><i className="fa fa-check"></i>Maecenas vitae luctus nibh. Curabitur pharetra luctus est, sit amet aliquam ex posuere id. </li>
-														<li><i className="fa fa-check"></i> Maecenas pharetra ante vel est lobortis</li>
-														<li><i className="fa fa-check"></i>Lorem ipsum dolor sit amet, consectetur.</li>
-													</ul>
+													<ul className="list">{departmentList.map((val, id) => <li key={id}><i className="fa fa-check"></i>{val.text} </li>)}</ul>
 												</div>
 											</div>
 											<div className="col-lg-6">

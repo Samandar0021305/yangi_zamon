@@ -62,8 +62,8 @@ const index = React.memo(() => {
         <div className="header-inner">
           <div className="container">
             <div className="inner">
-              <div className="row">
-                <div className="col-12">
+              <div className="row ">
+                <div className="col-12 flex justify-between items-center">
                   <div className="main-menu">
                     <nav className="navigation">
                       <ul className="nav menu">

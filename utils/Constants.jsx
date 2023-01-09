@@ -187,6 +187,178 @@ export const WhyChooseList = [
 ]
 
 
+export const tableList = [
+    {
+        id: 1,
+        text: "Lorem ipsum dolor sit"
+    },
+    {
+        id: 2,
+        text: "Cubitur sollicitudin fentum"
+    },
+    {
+        id: 3,
+        text: "Nullam interdum enim"
+    },
+    {
+        id: 4,
+        text: "Donec ultricies metus"
+    },
+    {
+        id: 5,
+        text: "Pellentesque eget nibh"
+    },
+]
+
+
+export const funFactslist = [
+    {
+        list: "waves wave-1"
+    },
+    {
+        list: "waves wave-2"
+    },
+    {
+        list: "waves wave-3"
+    },
+]
+
+export const funFacts = [
+    {
+        id: 1,
+        img: "icofont icofont-home",
+        num: 100,
+        text: "Kasalxona xonalari"
+    },
+    {
+        id: 2,
+        img: "icofont icofont-user-alt-3",
+        num: 50,
+        text: "Ixtisoslashgan shifokorlar"
+    },
+    {
+        id: 3,
+        img: "icofont-simple-smile",
+        num: 400,
+        text: "Baxtli bemorlar"
+    },
+    {
+        id: 4,
+        img: "icofont icofont-table",
+        num: 10,
+        text: "Yillik Tajriba"
+    },
+]
+
+export const singleFeatures = [
+    {
+        id: 1,
+        img: "icofont icofont-ambulance-cross",
+        text: "Favqulodda yordam"
+    },
+    {
+        id: 2,
+        img: "icofont icofont-medical-sign-alt",
+        text: "Boyitilgan dorixona"
+    },
+    {
+        id: 3,
+        img: "icofont icofont-stethoscope",
+        text: "Tibbiy davolash"
+    },
+]
+
+
+export const breadcrumbslist = [
+    {
+        id: 1,
+        img: "icofont-doctor",
+        text: "Professional xodimlar"
+    },
+    {
+        id: 2,
+        img: "icofont-kid",
+        text: "Yangi tug'ilgan chaqaloqlarni parvarish qilish"
+    },
+    {
+        id: 3,
+        img: "icofont-laboratory",
+        text: "Etarlicha laboratoriya testlari"
+    },
+    {
+        id: 4,
+        img: "icofont-tooth",
+        text: "Tish chiqarish"
+    },
+]
+
+
+export const breadcrumbs = [
+    {
+        title: "Bizning missiyamiz"
+    },
+    {
+        title: "Bizning rajalarimiz"
+    },
+    {
+        title: "Bizning korinishimiz"
+    },
+]
+
+export const FormCurrent = [
+    {
+        id: 1,
+        text: "Doktor"
+    },
+    {
+        id: 2,
+        text: "Dr. Akther Hossain"
+    },
+    {
+        id: 3,
+        text: "Dr. Dery Alex"
+    },
+    {
+        id: 4,
+        text: "Dr. Jovis Karon"
+    },
+]
+
+export const FormGroup = [
+    {
+        id: 1,
+        text: "Bo'lim"
+    },
+    {
+        id: 2,
+        text: "Kardiologiya klinikasi"
+    },
+    {
+        id: 3,
+        text: "Nevrologiya"
+    },
+    {
+        id: 4,
+        text: "Stomatologiya"
+    },
+    {
+        id: 5,
+        text: "Gastroenterologiya"
+    },
+]
+
+export const departmentList = [
+    {
+        text: "Maecenas vitae luctus nibh. Curabitur pharetra luctus est, sit amet aliquam ex posuere id."
+    },
+    {
+        text: "Maecenas pharetra ante vel est lobortis"
+    },
+    {
+        text: "Lorem ipsum dolor sit amet, consectetur."
+    }
+]
+
 export const service = [
     {
         classList: "col-lg-4 col-md-6 col-12",

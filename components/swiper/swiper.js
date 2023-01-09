@@ -55,7 +55,7 @@ const changeRight = ()=>{
   return (
       <div>
           <section className="slider index2">
-              <div classNAmeName="hero-slider">
+              <div className="hero-slider">
                   {
                     render.map(val=>{
                         if(val.id == count)

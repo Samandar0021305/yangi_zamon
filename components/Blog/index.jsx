@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import logo from "../../styles/img/section-img.png"
-import { BlogList, clientsList } from '../../utils/Constants'
+import {FormGroup, BlogList, clientsList ,FormCurrent} from '../../utils/Constants'
 import client from "../../styles/img/contact-img.png"
 
 const index = React.memo(() => {
@@ -97,11 +97,7 @@ const index = React.memo(() => {
                                         <div className="form-group">
                                             <div className="nice-select form-control wide" ><span className="current">Bo'lim</span>
                                                 <ul className="list">
-                                                    <li data-value="1" className="option selected ">Bo'lim</li>
-                                                    <li data-value="2" className="option">Kardiologiya klinikasi</li>
-                                                    <li data-value="3" className="option">Nevrologiya</li>
-                                                    <li data-value="4" className="option">Stomatologiya</li>
-                                                    <li data-value="5" className="option">Gastroenterologiya</li>
+                                                    {FormGroup.map((val)=><li key={val.id} data-value={`${val.id}`} className={val.id == 1 ? "option selected" : "option "}>{val.text}</li>)}
                                                 </ul>
                                             </div>
                                         </div>
@@ -110,10 +106,9 @@ const index = React.memo(() => {
                                         <div className="form-group">
                                             <div className="nice-select form-control wide"><span className="current">Doktor</span>
                                                 <ul className="list">
-                                                    <li data-value="1" className="option selected ">Doktor</li>
-                                                    <li data-value="2" className="option">Dr. Akther Hossain</li>
-                                                    <li data-value="3" className="option">Dr. Dery Alex</li>
-                                                    <li data-value="4" className="option">Dr. Jovis Karon</li>
+                                                    {
+                                                        FormCurrent.map((val)=><li key={val.id} data-value={`${val.id}`} className="option selected ">{val.id}</li>)
+                                                    }
                                                 </ul>
                                             </div>
                                         </div>
