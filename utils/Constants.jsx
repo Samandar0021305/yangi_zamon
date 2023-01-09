@@ -433,3 +433,27 @@ export const tableData = [
     { id: 7, name: "Dr. Pipe", prof: "Surgeons" },
   ],
 ];
+
+export const postsData = [
+  {
+    id: 1,
+    img: blogImg3,
+    title: "Biz yangi mahsulotimizni e'lon qildik.",
+    time: "Jan 11, 2022",
+    comment: 35,
+  },
+  {
+    id: 2,
+    img: blogImg3,
+    title: "Biz yangi mahsulotimizni e'lon qildik.",
+    time: "Jan 11, 2022",
+    comment: 35,
+  },
+  {
+    id: 3,
+    img: blogImg3,
+    title: "Biz yangi mahsulotimizni e'lon qildik.",
+    time: "Jan 11, 2022",
+    comment: 35,
+  },
+];
