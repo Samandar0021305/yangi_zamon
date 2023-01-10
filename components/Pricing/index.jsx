@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import logo from "../../styles/img/section-img.png"
 import logo2 from "../../styles/img/section-img2.png"
-import { PricingList } from '../../utils/Constants'
+import { PricingList, tableList } from '../../utils/Constants'
 
 const index = React.memo(() => {
     return (
@@ -31,11 +31,9 @@ const index = React.memo(() => {
                                     </div>
                                 </div>
                                 <ul className="table-list">
-                                    <li><i className="icofont icofont-ui-check"></i>Lorem ipsum dolor sit</li>
-                                    <li><i className="icofont icofont-ui-check"></i>Cubitur sollicitudin fentum</li>
-                                    <li className="cross"><i className="icofont icofont-ui-close"></i>Nullam interdum enim</li>
-                                    <li className="cross"><i className="icofont icofont-ui-close"></i>Donec ultricies metus</li>
-                                    <li className="cross"><i className="icofont icofont-ui-close"></i>Pellentesque eget nibh</li>
+                                    {tableList.map(val => {
+                                        return (<li key={val.id} className={val.id <= 2 ? "" : "cross"}><i className={val.id <= 2 ? "icofont icofont-ui-check" : "icofont icofont-ui-close"}></i>{val.text}</li>)
+                                    })}
                                 </ul>
                                 <div className="table-bottom">
                                     <a className="btn" href="#">Hozir band qiling</a>
@@ -54,11 +52,9 @@ const index = React.memo(() => {
                                     </div>
                                 </div>
                                 <ul className="table-list">
-                                    <li><i className="icofont icofont-ui-check"></i>Lorem ipsum dolor sit</li>
-                                    <li><i className="icofont icofont-ui-check"></i>Cubitur sollicitudin fentum</li>
-                                    <li><i className="icofont icofont-ui-check"></i>Nullam interdum enim</li>
-                                    <li className="cross"><i className="icofont icofont-ui-close"></i>Donec ultricies metus</li>
-                                    <li className="cross"><i className="icofont icofont-ui-close"></i>Pellentesque eget nibh</li>
+                                    {tableList.map(val => {
+                                        return (<li key={val.id} className={val.id <= 2 ? "" : "cross"}><i className={val.id <= 2 ? "icofont icofont-ui-check" : "icofont icofont-ui-close"}></i>{val.text}</li>)
+                                    })}
                                 </ul>
                                 <div className="table-bottom">
                                     <a className="btn" href="#">Hozir band qiling</a>
@@ -77,11 +73,7 @@ const index = React.memo(() => {
                                     </div>
                                 </div>
                                 <ul className="table-list">
-                                    <li><i className="icofont icofont-ui-check"></i>Lorem ipsum dolor sit</li>
-                                    <li><i className="icofont icofont-ui-check"></i>Cubitur sollicitudin fentum</li>
-                                    <li><i className="icofont icofont-ui-check"></i>Nullam interdum enim</li>
-                                    <li><i className="icofont icofont-ui-check"></i>Donec ultricies metus</li>
-                                    <li><i className="icofont icofont-ui-check"></i>Pellentesque eget nibh</li>
+                                    {tableList.map((val) => <li key={val.id}><i className="icofont icofont-ui-check"></i>{val.text}</li>)}
                                 </ul>
                                 <div className="table-bottom">
                                     <a className="btn" href="#">Hozir band qiling</a>
@@ -91,9 +83,6 @@ const index = React.memo(() => {
                     </div>
                 </div>
             </section>
-
-
-
 
             <section id="team" className="team section overlay" data-stellar-background-ratio="0.5">
                 <div className="container">
@@ -107,9 +96,9 @@ const index = React.memo(() => {
                     </div>
                     <div className="row">
                         {
-                            PricingList.map((val, i) => {
+                            PricingList.map((val, item) => {
                                 return (
-                                    <div key={i} className="col-lg-3 col-md-6 col-12" data-tilt>
+                                    <div key={item} className="col-lg-3 col-md-6 col-12" data-tilt>
                                         <div className="single-team wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s">
                                             <div className="t-head">
                                                 <Image src={val.img} alt="#" />

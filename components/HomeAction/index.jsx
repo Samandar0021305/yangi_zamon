@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import logo from "../../styles/img/section-img.png"
 import { portfolioList, service } from '../../utils/Constants'
+import CustomSlider from "../custumSlider"
 
 const index = React.memo(() => {
     return (
@@ -23,37 +24,7 @@ const index = React.memo(() => {
             </section>
 
 
-            <section className="portfolio section" >
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <div className="section-title">
-                                <h2>Kasalxonamiz ichida tozalik qoidalariga rioya qilamiz</h2>
-                                <Image src={logo} alt="#" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-lg-12 col-12">
-                            <div className="owl-carousel portfolio-slider">
-                                {
-                                    portfolioList.map((val, id) => {
-                                        return (
-                                            <div key={id} className="single-pf wow fadeIn" data-wow-delay="0.2s" data-wow-duration="0.8s">
-                                                <Image src={val.img} alt="#" />
-                                                <a href="#" className="btn">Tafsilotlarni ko'rish</a>
-                                            </div>
-                                        )
-                                    })
-                                }
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <CustomSlider />
 
 
             <section className="services section">
@@ -83,70 +54,7 @@ const index = React.memo(() => {
                 </div>
             </section>
          
-
-         {/* slider */}
-            {/* <section className="section testimonials overlay" data-stellar-background-ratio="0.5">
-			<div className="container">
-				<div className="row">
-					<div className="col-lg-12">
-						<div className="section-title">
-							<h2>Bemorlarimiz tibbiy muolajalarimiz haqida nima deyishadi</h2>
-							<img src="img/section-img2.png" alt="#">
-						</div>
-					</div>
-				</div>
-				<div className="row">
-					<div className="col-lg-12 col-12">
-						<div className="owl-carousel testimonial-slider">
-							<div className="single-testimonial">
-								<img src="img/testi1.png" alt="#">
-								<p>Lorem ipsum dolor sit amet consectetur eliet adipiscing. Aliquam nec suscipit turpis, vel pretium eros. </p>
-								<h4 className="name">Ruhfayed Sakib</h4>
-							</div>
-							
-							<div className="single-testimonial">
-								<img src="img/testi2.png" alt="#">
-								<p>Lorem ipsum dolor sit amet consectetur eliet adipiscing. Aliquam nec suscipit turpis, vel pretium eros. </p>
-								<h4 className="name">Shakil Hossain</h4>
-							</div>
-					
-							<div className="single-testimonial">
-								<img src="img/testi3.png" alt="#">
-								<p>Lorem ipsum dolor sit amet consectetur eliet adipiscing. Aliquam nec suscipit turpis, vel pretium eros. </p>
-								<h4 className="name">Naimur Rahman</h4>
-							</div>
-					
-							<div className="single-testimonial">
-								<img src="img/testi1.png" alt="#">
-								<p>Lorem ipsum dolor sit amet consectetur eliet adipiscing. Aliquam nec suscipit turpis, vel pretium eros. </p>
-								<h4 className="name">Ruhfayed Sakib</h4>
-							</div>
-					
-							<div className="single-testimonial">
-								<img src="img/testi2.png" alt="#">
-								<p>Lorem ipsum dolor sit amet consectetur eliet adipiscing. Aliquam nec suscipit turpis, vel pretium eros. </p>
-								<h4 className="name">Shakil Hossain</h4>
-							</div>
-								<img src="img/testi3.png" alt="#">
-								<p>Lorem ipsum dolor sit amet consectetur eliet adipiscing. Aliquam nec suscipit turpis, vel pretium eros. </p>
-								<h4 className="name">Naimur Rahman</h4>
-							</div>
-							<div className="single-testimonial">
-								<img src="img/testi1.png" alt="#">
-								<p>Lorem ipsum dolor sit amet consectetur eliet adipiscing. Aliquam nec suscipit turpis, vel pretium eros. </p>
-								<h4 className="name">Ruhfayed Sakib</h4>
-							</div>
-							<div className="single-testimonial">
-								<img src="img/testi2.png" alt="#">
-								<p>Lorem ipsum dolor sit amet consectetur eliet adipiscing. Aliquam nec suscipit turpis, vel pretium eros. </p>
-								<h4 className="name">Naimur Rahman</h4>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> */}
-
+         
         </>
     )
 })

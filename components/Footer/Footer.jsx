@@ -17,6 +17,7 @@ const Footer = React.memo(() => {
                 <div className="single-footer">
                   <h2>Biz haqimizda</h2>
                   <ul className="social">
+<<<<<<< HEAD
                     {social.map((val) => (
                       <li key={val.id}>
                         <a href="">
@@ -24,6 +25,13 @@ const Footer = React.memo(() => {
                         </a>
                       </li>
                     ))}
+=======
+                    {social.map(val => {
+                      return(
+                        <li key={val.id}><a href=""><i className={val.img}></i></a></li>
+                      )
+                    })}
+>>>>>>> e8f8ebbebb8c125eba3880e2fa1e584aa75ddbec
                   </ul>
                 </div>
               </div>
@@ -44,6 +52,7 @@ const Footer = React.memo(() => {
                       </ul>
                     </div>
                     <div className="col-lg-6 col-md-6 col-12">
+<<<<<<< HEAD
                       <ul>
                         {singleFooter2.map((val) => (
                           <li key={val.id}>
@@ -54,6 +63,9 @@ const Footer = React.memo(() => {
                           </li>
                         ))}
                       </ul>
+=======
+                      <ul>{singleFooter2.map(val => <li key={val.id}><a href="#"><i className={val.img} aria-hidden="true"></i>{val.text}</a></li>)}</ul>
+>>>>>>> e8f8ebbebb8c125eba3880e2fa1e584aa75ddbec
                     </div>
                   </div>
                 </div>
@@ -79,6 +91,7 @@ const Footer = React.memo(() => {
                     axborot byulletenimizga obuna bo'ling.
                   </p>
                   <form action="" method="get" className="newsletter-inner">
+<<<<<<< HEAD
                     <input
                       name="email"
                       placeholder="E-pochta manzili"
@@ -91,6 +104,11 @@ const Footer = React.memo(() => {
                     <button className="button">
                       <i className="icofont icofont-paper-plane"></i>
                     </button>
+=======
+                    <input name="email" placeholder="E-pochta manzili" className="common-input"
+                       required="" type="email" />
+                    <button className="button"><i className="icofont icofont-paper-plane"></i></button>
+>>>>>>> e8f8ebbebb8c125eba3880e2fa1e584aa75ddbec
                   </form>
                 </div>
               </div>

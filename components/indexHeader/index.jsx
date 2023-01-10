@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import logo from "../../styles/img/section-img.png"
-import { WhyChooseList } from '../../utils/Constants'
+import { funFacts, funFactslist, singleFeatures, WhyChooseList } from '../../utils/Constants'
 
 const index = React.memo(() => {
     return (
@@ -17,30 +17,18 @@ const index = React.memo(() => {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-lg-4 col-12">
-                            <div className="single-features wow fadeIn" data-wow-delay="0.4s" data-wow-duration="1s">
-                                <div className="signle-icon">
-                                    <i className="icofont icofont-ambulance-cross"></i>
+                        {singleFeatures.map((val) => {
+                            return (
+                                <div key={val.id} className="col-lg-4 col-12">
+                                    <div className={val.id === 3 ? "single-features last wow fadeIn" : "single-features wow fadeIn"} data-wow-delay="0.4s" data-wow-duration="1s">
+                                        <div className="signle-icon">
+                                            <i className={val.img}></i>
+                                        </div>
+                                        <h3>{val.text}</h3>
+                                    </div>
                                 </div>
-                                <h3>Favqulodda yordam</h3>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-12">
-                            <div className="single-features wow fadeIn" data-wow-delay="0.6s" data-wow-duration="1s">
-                                <div className="signle-icon">
-                                    <i className="icofont icofont-medical-sign-alt"></i>
-                                </div>
-                                <h3>Boyitilgan dorixona</h3>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-12">
-                            <div className="single-features last wow fadeIn" data-wow-delay="0.6s" data-wow-duration="1s">
-                                <div className="signle-icon">
-                                    <i className="icofont icofont-stethoscope"></i>
-                                </div>
-                                <h3>Tibbiy davolash</h3>
-                            </div>
-                        </div>
+                            )
+                        })}
                     </div>
                 </div>
             </section>
@@ -50,42 +38,19 @@ const index = React.memo(() => {
             <div id="fun-facts" className="fun-facts section overlay">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-3 col-md-6 col-12">
-                            <div className="single-fun wow fadeIn" data-wow-delay="1s" data-wow-duration="0.5s">
-                                <i className="icofont icofont-home"></i>
-                                <div className="content">
-                                    <span className="counter">100</span>
-                                    <p>Kasalxona xonalari</p>
+                        {funFacts.map((val) => {
+                            return (
+                                <div key={val.id} className="col-lg-3 col-md-6 col-12">
+                                    <div className="single-fun wow fadeIn" data-wow-delay="1s" data-wow-duration="0.5s">
+                                        <i className={val.img}></i>
+                                        <div className="content">
+                                            <span className="counter">{val.num}</span>
+                                            <p>{val.text}</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6 col-12">
-                            <div className="single-fun wow fadeIn" data-wow-delay="0.8s" data-wow-duration="0.5s">
-                                <i className="icofont icofont-user-alt-3"></i>
-                                <div className="content">
-                                    <span className="counter">50</span>
-                                    <p>Ixtisoslashgan shifokorlar</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6 col-12">
-                            <div className="single-fun wow fadeIn" data-wow-delay="0.6s" data-wow-duration="0.5s">
-                                <i className="icofont-simple-smile"></i>
-                                <div className="content">
-                                    <span className="counter">400</span>
-                                    <p>Baxtli bemorlar</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6 col-12">
-                            <div className="single-fun wow fadeIn" data-wow-delay="0.4s" data-wow-duration="0.5s">
-                                <i className="icofont icofont-table"></i>
-                                <div className="content">
-                                    <span className="counter">10</span>
-                                    <p>Yillik Tajriba</p>
-                                </div>
-                            </div>
-                        </div>
+                            )
+                        })}
                     </div>
                 </div>
             </div>
@@ -112,12 +77,21 @@ const index = React.memo(() => {
                                 <div className="row">
                                     <div className="col-lg-6">
                                         <ul className="list">
-                                            {WhyChooseList.map(val => <li key={val.id}><i className={val.img}></i>{val.text}</li>)}
+                                            {WhyChooseList.map(val => {
+                                                return (
+                                                    <li key={val.id}><i className={val.img}></i>{val.text}</li>
+                                                )
+                                            })}
                                         </ul>
                                     </div>
                                     <div className="col-lg-6">
                                         <ul className="list">
-                                            {WhyChooseList.map(val => <li key={val.id}><i className={val.img}></i>{val.text}</li>)}
+                                            {WhyChooseList.map(val => {
+                                                return (
+                                                    <li key={val.id}><i className={val.img}></i>{val.text}</li>
+                                                )
+                                            })}
+
                                         </ul>
                                     </div>
                                 </div>
@@ -128,9 +102,7 @@ const index = React.memo(() => {
                                 <div className="video-image">
                                     <div className="promo-video">
                                         <div className="waves-block">
-                                            <div className="waves wave-1"></div>
-                                            <div className="waves wave-2"></div>
-                                            <div className="waves wave-3"></div>
+                                            {funFactslist.map((val, id) => <div key={id} className={val.list}></div>)}
                                         </div>
                                     </div>
                                     <a href="https://youtu.be/MKqjKA9X3ZY?list=RDMKqjKA9X3ZY" className="video video-popup mfp-iframe"><i className="fa fa-play"></i></a>

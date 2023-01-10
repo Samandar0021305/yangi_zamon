@@ -162,6 +162,7 @@ export const footerList = [
 ];
 
 export const WhyChooseList = [
+<<<<<<< HEAD
   {
     id: 1,
     img: "fa fa-caret-right",
@@ -210,6 +211,197 @@ export const portfolioList = [
     img: pf4,
   },
 ];
+=======
+    {
+        id: 1,
+        img: "fa fa-caret-right",
+        text: "Maecenas vitae luctus nibh.",
+    },
+    {
+        id: 2,
+        img: "fa fa-caret-right",
+        text: "Duis massa massa.",
+    },
+    {
+        id: 3,
+        img: "fa fa-caret-right",
+        text: "Aliquam feugiat interdum.",
+    },
+]
+
+
+export const tableList = [
+    {
+        id: 1,
+        text: "Lorem ipsum dolor sit"
+    },
+    {
+        id: 2,
+        text: "Cubitur sollicitudin fentum"
+    },
+    {
+        id: 3,
+        text: "Nullam interdum enim"
+    },
+    {
+        id: 4,
+        text: "Donec ultricies metus"
+    },
+    {
+        id: 5,
+        text: "Pellentesque eget nibh"
+    },
+]
+
+>>>>>>> e8f8ebbebb8c125eba3880e2fa1e584aa75ddbec
+
+export const funFactslist = [
+    {
+        list: "waves wave-1"
+    },
+    {
+        list: "waves wave-2"
+    },
+    {
+        list: "waves wave-3"
+    },
+]
+
+export const funFacts = [
+    {
+        id: 1,
+        img: "icofont icofont-home",
+        num: 100,
+        text: "Kasalxona xonalari"
+    },
+    {
+        id: 2,
+        img: "icofont icofont-user-alt-3",
+        num: 50,
+        text: "Ixtisoslashgan shifokorlar"
+    },
+    {
+        id: 3,
+        img: "icofont-simple-smile",
+        num: 400,
+        text: "Baxtli bemorlar"
+    },
+    {
+        id: 4,
+        img: "icofont icofont-table",
+        num: 10,
+        text: "Yillik Tajriba"
+    },
+]
+
+export const singleFeatures = [
+    {
+        id: 1,
+        img: "icofont icofont-ambulance-cross",
+        text: "Favqulodda yordam"
+    },
+    {
+        id: 2,
+        img: "icofont icofont-medical-sign-alt",
+        text: "Boyitilgan dorixona"
+    },
+    {
+        id: 3,
+        img: "icofont icofont-stethoscope",
+        text: "Tibbiy davolash"
+    },
+]
+
+
+export const breadcrumbslist = [
+    {
+        id: 1,
+        img: "icofont-doctor",
+        text: "Professional xodimlar"
+    },
+    {
+        id: 2,
+        img: "icofont-kid",
+        text: "Yangi tug'ilgan chaqaloqlarni parvarish qilish"
+    },
+    {
+        id: 3,
+        img: "icofont-laboratory",
+        text: "Etarlicha laboratoriya testlari"
+    },
+    {
+        id: 4,
+        img: "icofont-tooth",
+        text: "Tish chiqarish"
+    },
+]
+
+
+export const breadcrumbs = [
+    {
+        title: "Bizning missiyamiz"
+    },
+    {
+        title: "Bizning rajalarimiz"
+    },
+    {
+        title: "Bizning korinishimiz"
+    },
+]
+
+export const FormCurrent = [
+    {
+        id: 1,
+        text: "Doktor"
+    },
+    {
+        id: 2,
+        text: "Dr. Akther Hossain"
+    },
+    {
+        id: 3,
+        text: "Dr. Dery Alex"
+    },
+    {
+        id: 4,
+        text: "Dr. Jovis Karon"
+    },
+]
+
+export const FormGroup = [
+    {
+        id: 1,
+        text: "Bo'lim"
+    },
+    {
+        id: 2,
+        text: "Kardiologiya klinikasi"
+    },
+    {
+        id: 3,
+        text: "Nevrologiya"
+    },
+    {
+        id: 4,
+        text: "Stomatologiya"
+    },
+    {
+        id: 5,
+        text: "Gastroenterologiya"
+    },
+]
+
+export const departmentList = [
+    {
+        text: "Maecenas vitae luctus nibh. Curabitur pharetra luctus est, sit amet aliquam ex posuere id."
+    },
+    {
+        text: "Maecenas pharetra ante vel est lobortis"
+    },
+    {
+        text: "Lorem ipsum dolor sit amet, consectetur."
+    }
+]
 
 export const service = [
   {
@@ -327,6 +519,7 @@ import team3 from "../styles/img/team3.jpg";
 import team4 from "../styles/img/team4.jpg";
 
 export const PricingList = [
+<<<<<<< HEAD
   {
     name: "Collis Molate",
     job: "Neyroxirurg",
@@ -348,12 +541,40 @@ export const PricingList = [
     img: team4,
   },
 ];
+=======
+    {
+        name: "Collis Molate",
+        job: "Neyroxirurg",
+        img: team1
+    },
+    {
+        name: "Domani Plavon",
+        job: "Neyroxirurg",
+        img: team2
+    },
+    {
+        name: "John Mard",
+        job: "Tish jarrohi",
+        img: team3
+    },
+    {
+        name: "Amanal Frond",
+        job: "Neyroxirurg",
+        img: team4
+    },
+]
+
+import blogImg1 from "../styles/img/blog1.jpg"
+import blogImg2 from "../styles/img/blog2.jpg"
+import blogImg3 from "../styles/img/blog3.jpg"
+>>>>>>> e8f8ebbebb8c125eba3880e2fa1e584aa75ddbec
 
 import blogImg1 from "../styles/img/blog1.jpg";
 import blogImg2 from "../styles/img/blog2.jpg";
 import blogImg3 from "../styles/img/blog3.jpg";
 
 export const BlogList = [
+<<<<<<< HEAD
   {
     img: blogImg1,
     text: "Biz yangi mahsulotimizni e'lon qildik.",
@@ -457,3 +678,56 @@ export const postsData = [
     comment: 35,
   },
 ];
+=======
+    {
+        img: blogImg1,
+        text: "Biz yangi mahsulotimizni e'lon qildik."
+    },
+    {
+        img: blogImg2,
+        text: "Tish muammolarini hal qilishning eng yaxshi besh usuli."
+    },
+    {
+        img: blogImg3,
+        text: "Biz yuqori darajadagi biznes yechimlarini taqdim etamiz."
+    },
+]
+
+import clientsImg1 from "../styles/img/client1.png"
+import clientsImg2 from "../styles/img/client2.png"
+import clientsImg3 from "../styles/img/client3.png"
+import clientsImg4 from "../styles/img/client4.png"
+import clientsImg5 from "../styles/img/client5.png"
+
+
+export const clientsList = [
+    {
+        img: clientsImg1
+    },
+    {
+        img: clientsImg2
+    },
+    {
+        img: clientsImg3
+    },
+    {
+        img: clientsImg4
+    },
+    {
+        img: clientsImg5
+    },
+    {
+        img: clientsImg1
+    },
+    {
+        img: clientsImg2
+    },
+    {
+        img: clientsImg3
+    },
+    {
+        img: clientsImg4
+    },
+]
+
+>>>>>>> e8f8ebbebb8c125eba3880e2fa1e584aa75ddbec
