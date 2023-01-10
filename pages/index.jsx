@@ -14,17 +14,10 @@ export const getStaticProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale, ["common"])),
   },
-<<<<<<< HEAD
 });
 function Home() {
   const router = useRouter();
-  const userList = useSelector((state) => state.users.userList);
-=======
-})
-function Home() {
-  const router = useRouter();
   const userList = useSelector(state => state.users.userList);
->>>>>>> e8f8ebbebb8c125eba3880e2fa1e584aa75ddbec
   const { locale } = router;
   const { t } = useTranslation("common");
   return (
@@ -35,7 +28,6 @@ function Home() {
       <IndexHeader />
       <HomeAction />
       <Departament />
-<<<<<<< HEAD
      <Pricing /> 
      <Blog />
       {/* <footer>
@@ -47,13 +39,8 @@ function Home() {
        ))}
         </nav>
       </footer> */}
-=======
       <Pricing />
       <Blog />
-
-
-
->>>>>>> e8f8ebbebb8c125eba3880e2fa1e584aa75ddbec
     </div>
   );
 }

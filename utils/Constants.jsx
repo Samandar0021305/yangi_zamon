@@ -162,7 +162,6 @@ export const footerList = [
 ];
 
 export const WhyChooseList = [
-<<<<<<< HEAD
   {
     id: 1,
     img: "fa fa-caret-right",
@@ -211,23 +210,6 @@ export const portfolioList = [
     img: pf4,
   },
 ];
-=======
-    {
-        id: 1,
-        img: "fa fa-caret-right",
-        text: "Maecenas vitae luctus nibh.",
-    },
-    {
-        id: 2,
-        img: "fa fa-caret-right",
-        text: "Duis massa massa.",
-    },
-    {
-        id: 3,
-        img: "fa fa-caret-right",
-        text: "Aliquam feugiat interdum.",
-    },
-]
 
 
 export const tableList = [
@@ -252,9 +234,6 @@ export const tableList = [
         text: "Pellentesque eget nibh"
     },
 ]
-
->>>>>>> e8f8ebbebb8c125eba3880e2fa1e584aa75ddbec
-
 export const funFactslist = [
     {
         list: "waves wave-1"
@@ -519,7 +498,6 @@ import team3 from "../styles/img/team3.jpg";
 import team4 from "../styles/img/team4.jpg";
 
 export const PricingList = [
-<<<<<<< HEAD
   {
     name: "Collis Molate",
     job: "Neyroxirurg",
@@ -541,40 +519,14 @@ export const PricingList = [
     img: team4,
   },
 ];
-=======
-    {
-        name: "Collis Molate",
-        job: "Neyroxirurg",
-        img: team1
-    },
-    {
-        name: "Domani Plavon",
-        job: "Neyroxirurg",
-        img: team2
-    },
-    {
-        name: "John Mard",
-        job: "Tish jarrohi",
-        img: team3
-    },
-    {
-        name: "Amanal Frond",
-        job: "Neyroxirurg",
-        img: team4
-    },
-]
 
-import blogImg1 from "../styles/img/blog1.jpg"
-import blogImg2 from "../styles/img/blog2.jpg"
-import blogImg3 from "../styles/img/blog3.jpg"
->>>>>>> e8f8ebbebb8c125eba3880e2fa1e584aa75ddbec
+
 
 import blogImg1 from "../styles/img/blog1.jpg";
 import blogImg2 from "../styles/img/blog2.jpg";
 import blogImg3 from "../styles/img/blog3.jpg";
 
 export const BlogList = [
-<<<<<<< HEAD
   {
     img: blogImg1,
     text: "Biz yangi mahsulotimizni e'lon qildik.",
@@ -678,20 +630,6 @@ export const postsData = [
     comment: 35,
   },
 ];
-=======
-    {
-        img: blogImg1,
-        text: "Biz yangi mahsulotimizni e'lon qildik."
-    },
-    {
-        img: blogImg2,
-        text: "Tish muammolarini hal qilishning eng yaxshi besh usuli."
-    },
-    {
-        img: blogImg3,
-        text: "Biz yuqori darajadagi biznes yechimlarini taqdim etamiz."
-    },
-]
 
 import clientsImg1 from "../styles/img/client1.png"
 import clientsImg2 from "../styles/img/client2.png"
@@ -729,5 +667,3 @@ export const clientsList = [
         img: clientsImg4
     },
 ]
-
->>>>>>> e8f8ebbebb8c125eba3880e2fa1e584aa75ddbec

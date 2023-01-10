@@ -77,15 +77,12 @@ const index = React.memo(() => {
         <div className="header-inner sticky top-0">
           <div className="container">
             <div className="inner">
-<<<<<<< HEAD
               <div className="row">
                 <div className="col-12 flex justify-between ">
                   <div className="main-menu ">
-=======
-              <div className="row ">
+  <div className="row ">
                 <div className="col-12 flex justify-between items-center">
                   <div className="main-menu">
->>>>>>> e8f8ebbebb8c125eba3880e2fa1e584aa75ddbec
                     <nav className="navigation">
                       <ul className="nav menu">
                         {HeaderList.map((val) => (
@@ -137,6 +134,9 @@ const index = React.memo(() => {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
               </div>
             </div>
           </div>
