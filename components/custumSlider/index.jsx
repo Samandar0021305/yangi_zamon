@@ -106,7 +106,7 @@ useEffect(()=>{
                         portfolioList.map((val, id) => {
                             if(old <= val.id && val.id <= slide)
                             return (
-                                <div key={id} className="single-pf w-[23%] hidden md:flex wow fadeIn" data-aos="fade-left">
+                                <div key={id} className="single-pf w-[20%] mx-[8px] hidden md:flex wow fadeIn" data-aos="fade-left">
                                     <Image src={val.img} alt="#" />
                                     <a href="#" className="btn">Tafsilotlarni ko'rish</a>
                                 </div>

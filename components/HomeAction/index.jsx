@@ -3,6 +3,7 @@ import Image from 'next/image'
 import logo from "../../styles/img/section-img.png"
 import { portfolioList, service } from '../../utils/Constants'
 import CustomSlider from "../custumSlider"
+import CaruselCustom from "../CaruselCustom"
 
 const index = React.memo(() => {
     return (
@@ -54,6 +55,7 @@ const index = React.memo(() => {
                 </div>
             </section>
          
+         <CaruselCustom />
          
         </>
     )

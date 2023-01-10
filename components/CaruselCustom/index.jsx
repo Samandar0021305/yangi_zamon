@@ -110,7 +110,7 @@ const index = () => {
 
                     <div className="row hidden lg:flex">
                         <div className="col-lg-12 col-12">
-                            <div className=" testimonial-slider flex flex-wrap">
+                            <div className=" testimonial-slider justify-center items-center flex flex-wrap">
 
                                 {
                                     SliderArray.map((val) => {

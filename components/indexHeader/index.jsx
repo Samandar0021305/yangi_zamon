@@ -105,7 +105,8 @@ const index = React.memo(() => {
                                             {funFactslist.map((val, id) => <div key={id} className={val.list}></div>)}
                                         </div>
                                     </div>
-                                    <a href="https://youtu.be/MKqjKA9X3ZY?list=RDMKqjKA9X3ZY" className="video video-popup mfp-iframe"><i className="fa fa-play"></i></a>
+                                    <iframe className='w-[70%] h-[200px] video video-popup mfp-iframe' src="https://www.youtube.com/embed/8LZJz7GtJA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    {/* <a href="https://youtu.be/MKqjKA9X3ZY?list=RDMKqjKA9X3ZY" className="video video-popup mfp-iframe"><i className="fa fa-play"></i></a> */}
                                 </div>
                             </div>
                         </div>

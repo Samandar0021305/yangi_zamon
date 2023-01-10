@@ -370,16 +370,91 @@ export const FormGroup = [
     },
 ]
 
+
+export const departnav = [
+  {
+    id:1,
+    img:"icofont-heart-beat",
+    title:"Kardiologiya"
+  },
+  {
+    id:2,
+    img:"icofont-brain-alt",
+    title:"Neurology"
+  },
+  {
+    id:3,
+    img:"icofont-tooth",
+    title:"Stomatologiya"
+  },
+  {
+    id:4,
+    img:"icofont-heart-beat",
+    title:"Yurak Jarrohligi"
+  },
+  {
+    id:5,
+    img:"icofont-bone",
+    title:"Ortopediya"
+  },
+]
+
 export const departmentList = [
     {
-        text: "Maecenas vitae luctus nibh. Curabitur pharetra luctus est, sit amet aliquam ex posuere id."
+      id:1,
+        title:"Kardiologiya klinikasi",
+        clic:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra ante vel est lobortis, a commodo magna rhoncus. In quis nisi non quam pharetra commodo.",
+        viaves:"“Vivamus ut tellus sed tellus finibus egestas. Mauris adipiscing aliquet et nisl nec eleifend adipiscing elit.”",
+         list:[
+          {text: "Maecenas vitae luctus nibh. Curabitur pharetra luctus est, sit amet aliquam ex posuere id."},
+          {text: "Maecenas pharetra ante vel est lobortis"}, 
+          {text: "Lorem ipsum dolor sit amet, consectetur."}
+        ],   
     },
     {
-        text: "Maecenas pharetra ante vel est lobortis"
+      id:2,
+        title:"Nevrologiya",
+        viaves:"“Vivamus ut tellus sed tellus finibus egestas. Mauris adipiscing aliquet et nisl nec eleifend adipiscing elit.”",
+        clic:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra ante vel est lobortis, a commodo magna rhoncus. In quis nisi non quam pharetra commodo.",
+         list:[
+          {text: "Maecenas vitae luctus nibh. Curabitur pharetra luctus est, sit amet aliquam ex posuere id."},
+          {text: "Maecenas pharetra ante vel est lobortis"}, 
+          {text: "Lorem ipsum dolor sit amet, consectetur."}
+        ],   
     },
     {
-        text: "Lorem ipsum dolor sit amet, consectetur."
-    }
+      id:3,
+        title:"Stomatologiya",
+        viaves:"“Vivamus ut tellus sed tellus finibus egestas. Mauris adipiscing aliquet et nisl nec eleifend adipiscing elit.”",
+        clic:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra ante vel est lobortis, a commodo magna rhoncus. In quis nisi non quam pharetra commodo.",
+         list:[
+          {text: "Maecenas vitae luctus nibh. Curabitur pharetra luctus est, sit amet aliquam ex posuere id."},
+          {text: "Maecenas pharetra ante vel est lobortis"}, 
+          {text: "Lorem ipsum dolor sit amet, consectetur."}
+        ],   
+    },
+    {
+      id:4,
+        title:"Gastroenterologiya",
+        viaves:"“Vivamus ut tellus sed tellus finibus egestas. Mauris adipiscing aliquet et nisl nec eleifend adipiscing elit.”",
+        clic:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra ante vel est lobortis, a commodo magna rhoncus. In quis nisi non quam pharetra commodo.",
+         list:[
+          {text: "Maecenas vitae luctus nibh. Curabitur pharetra luctus est, sit amet aliquam ex posuere id."},
+          {text: "Maecenas pharetra ante vel est lobortis"}, 
+          {text: "Lorem ipsum dolor sit amet, consectetur."}
+        ],   
+    },
+    {
+      id:5,
+        title:"Ortopediya",
+        viaves:"“Vivamus ut tellus sed tellus finibus egestas. Mauris adipiscing aliquet et nisl nec eleifend adipiscing elit.”",
+        clic:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra ante vel est lobortis, a commodo magna rhoncus. In quis nisi non quam pharetra commodo.",
+         list:[
+          {text: "Maecenas vitae luctus nibh. Curabitur pharetra luctus est, sit amet aliquam ex posuere id."},
+          {text: "Maecenas pharetra ante vel est lobortis"}, 
+          {text: "Lorem ipsum dolor sit amet, consectetur."}
+        ],   
+    },
 ]
 
 export const service = [
