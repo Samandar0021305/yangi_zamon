@@ -30,17 +30,6 @@ function Home() {
       <Departament />
      <Pricing /> 
      <Blog />
-      {/* <footer>
-        <nav>
-       {userList.map((el, index) => (
-        <div key={index}>
-           <span>name: {el.name}</span>FunFacts
-        </div>
-       ))}
-        </nav>
-      </footer> */}
-      <Pricing />
-      <Blog />
     </div>
   );
 }

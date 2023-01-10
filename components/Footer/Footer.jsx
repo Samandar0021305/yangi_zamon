@@ -24,11 +24,6 @@ const Footer = React.memo(() => {
                         </a>
                       </li>
                     ))}
-                    {social.map(val => {
-                      return(
-                        <li key={val.id}><a href=""><i className={val.img}></i></a></li>
-                      )
-                    })}
                   </ul>
                 </div>
               </div>
@@ -59,7 +54,6 @@ const Footer = React.memo(() => {
                           </li>
                         ))}
                       </ul>
-                      <ul>{singleFooter2.map(val => <li key={val.id}><a href="#"><i className={val.img} aria-hidden="true"></i>{val.text}</a></li>)}</ul>
                     </div>
                   </div>
                 </div>
@@ -97,9 +91,6 @@ const Footer = React.memo(() => {
                     <button className="button">
                       <i className="icofont icofont-paper-plane"></i>
                     </button>
-                    <input name="email" placeholder="E-pochta manzili" className="common-input"
-                       required="" type="email" />
-                    <button className="button"><i className="icofont icofont-paper-plane"></i></button>
                   </form>
                 </div>
               </div>
