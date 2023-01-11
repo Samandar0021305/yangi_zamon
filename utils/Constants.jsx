@@ -742,3 +742,81 @@ export const clientsList = [
         img: clientsImg4
     },
 ]
+
+
+export const InputList = [
+  {
+    id:1,
+    name:"name",
+    placeholder:"FIO",
+    type:"text",
+  },
+  {
+    id:2,
+    name:"email",
+    placeholder:"Email",
+    type:"email",
+  },
+  {
+    id:3,
+    name:"phone",
+    placeholder:"Telefon",
+    type:"text",
+  },
+  {
+    id:4,
+     text:"Bo'lim",
+    list:[
+      {
+        id:1,
+        title:"Bo'lim"
+      },
+      {
+        id:2,
+        title:"Kardiologiya klinikasi"
+      },
+      {
+        id:3,
+        title:"Nevrologiya"
+      },
+      {
+        id:4,
+        title:"Stomatologiya"
+      },
+      {
+        id:5,
+        title:"Gastroenterologiya"
+      },
+    ]
+  },
+  {
+    id:5,
+     text:"Doktor",
+    list:[
+      {
+        id:1,
+        title:"Doktor"
+      },
+      {
+        id:2,
+        title:"Dr. Akther Hossain"
+      },
+      {
+        id:3,
+        title:"Dr. Dery Alex"
+      },
+      {
+        id:4,
+        title:"Dr. Jovis Karon"
+      }
+    ]
+  },
+  {
+    id:6,
+    name:"name",
+    placeholder:"Sana",
+    type:"text",
+  },
+
+]
+
